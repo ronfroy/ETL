@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ETL\Exception;
+namespace ETL\Exception;
 
 interface ETLExceptionInterface
 {

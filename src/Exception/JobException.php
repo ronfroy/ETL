@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ETL\Exception;
 
-use App\ETL\Exception\ETLExceptionInterface;
+use ETL\Exception\ETLExceptionInterface;
 
 class JobException extends \Exception implements ETLExceptionInterface
 {
