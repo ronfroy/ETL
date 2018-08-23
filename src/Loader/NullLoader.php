@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ronfroy
- * Date: 23/08/2018
- * Time: 14:21
- */
 
 namespace ETL\Loader;
 
