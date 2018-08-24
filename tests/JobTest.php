@@ -69,8 +69,8 @@ class JobTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals($extract, $execution['extractor'], sprintf('extractor must be executed %d time(s)', $extract));
         $this->assertEquals($transform, $execution['transformer'], sprintf('transformer must be executed %d time(s)', $transform));
-        $this->assertEquals($load, $execution['loader'], sprintf('loader must be executed %d time(s)', $loader));
-        $this->assertEquals($validation, $execution['validator'], sprintf('validator must be executed %d time(s)', $validator));
+        $this->assertEquals($load, $execution['loader'], sprintf('loader must be executed %d time(s)', $load));
+        $this->assertEquals($validation, $execution['validator'], sprintf('validator must be executed %d time(s)', $validation));
     }
 
 
