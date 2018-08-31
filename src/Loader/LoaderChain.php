@@ -5,7 +5,7 @@ namespace ETL\Loader;
 class LoaderChain implements LoaderInterface
 {
     /** @var LoaderInterface[] */
-    private $loaders;
+    private $loaders = [];
 
     /**
      * LoaderChain constructor.

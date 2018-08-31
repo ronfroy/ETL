@@ -5,7 +5,7 @@ namespace ETL\Transformer;
 class TransformerChain implements TransformerInterface
 {
     /** @var TransformerInterface[] */
-    private $transformers;
+    private $transformers = [];
 
     /**
      * TransformerChain constructor.
