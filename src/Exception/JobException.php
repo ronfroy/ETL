@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ETL\Exception;
 
-class JobException extends \Exception implements ETLExceptionInterface
+class JobException extends \Exception implements ExceptionInterface
 {
     /**
      * @param int        $increment

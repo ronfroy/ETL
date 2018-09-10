@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ETL\Exception;
 
-class ExtractionException extends \Exception implements ETLExceptionInterface
+class ExtractionException extends \Exception implements ExceptionInterface
 {
     /**
      * @param string $filePath
