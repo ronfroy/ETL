@@ -4,6 +4,6 @@ declare(strict_types=1);
 
 namespace ETL\Exception;
 
-interface ETLExceptionInterface
+interface ExceptionInterface extends \Throwable
 {
 }
