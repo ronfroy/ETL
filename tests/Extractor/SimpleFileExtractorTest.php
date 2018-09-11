@@ -15,7 +15,7 @@ class SimpleFileExtractorTest extends TestCase
     {
         $fileName = tempnam(sys_get_temp_dir(), 'ETL');
 
-        $extractor = new SimpleFileExtractor($fileName);
+        $extractor = new SimpleFileExtractor([$fileName, $fileName]);
 
         file_put_contents($fileName, 1);
 
@@ -30,6 +30,11 @@ class SimpleFileExtractorTest extends TestCase
         }
 
         $this->expectException(ExtractionException::class);
-        $extractor->extract();
+
+        $extraction = $extractor->extract();
+
+        foreach ($extraction as $data) {
+            $this->assertEquals(1, $data);
+        }
     }
 }
