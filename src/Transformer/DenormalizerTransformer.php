@@ -2,11 +2,11 @@
 
 namespace ETL\Transformer;
 
-use Symfony\Component\Serializer\Normalizer\DenormalizableInterface;
+use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class DenormalizerTransformer implements TransformerInterface
 {
-    /** @var DenormalizableInterface */
+    /** @var DenormalizerInterface */
     private $denormalizer;
 
     /** @var string */
@@ -18,11 +18,11 @@ class DenormalizerTransformer implements TransformerInterface
     /**
      * DenormalizerTransformer constructor.
      *
-     * @param DenormalizableInterface $denormalizer
+     * @param DenormalizerInterface $denormalizer
      * @param string $format
      * @param array $context
      */
-    public function __construct(DenormalizableInterface $denormalizer, string $format, array $context)
+    public function __construct(DenormalizerInterface $denormalizer, string $format, array $context)
     {
         $this->denormalizer = $denormalizer;
         $this->format = $format;
