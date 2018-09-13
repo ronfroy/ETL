@@ -2,11 +2,11 @@
 
 namespace ETL\Transformer;
 
-use Symfony\Component\Serializer\Normalizer\NormalizableInterface;
+use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
 class NormalizerTransformer implements TransformerInterface
 {
-    /** @var NormalizableInterface */
+    /** @var NormalizerInterface */
     private $normalizer;
 
     /** @var string */
@@ -18,11 +18,11 @@ class NormalizerTransformer implements TransformerInterface
     /**
      * NormalizerTransformer constructor.
      *
-     * @param NormalizableInterface $normalizer
+     * @param NormalizerInterface $normalizer
      * @param string $format
      * @param array $context
      */
-    public function __construct(NormalizableInterface $normalizer, string $format, array $context)
+    public function __construct(NormalizerInterface $normalizer, string $format, array $context)
     {
         $this->normalizer = $normalizer;
         $this->format = $format;
